@@ -1,0 +1,124 @@
+.AboutMeMain{
+    height: 700px;
+    color: azure;
+    
+    background: linear-gradient(to bottom, #161616 0%, #3F3F3F 40%, #1C1C1C 150%), 
+                linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+}
+
+.AboutMe{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 35% 55%; 
+    height: 100%;
+    padding: 80px 0 60px 0;
+    gap: 20px;
+}
+
+.ColumImage{
+    display: flex;    
+    align-items: center;
+    justify-content: right;
+    overflow: hidden;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.ColumImage img{
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px 2px rgba(63, 60, 60, 0.3);
+}
+
+.ColumAboutMe{
+    text-align: center;
+}
+
+.ColumAboutMe h1{
+    color: azure;
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+.ColumAboutMe h2 p{
+    color: azure;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+/*------------------------- Medias Querys --------------------------*/
+
+@media (max-width:1200px) {
+
+    .AboutMe{
+        grid-template-columns: 25% 60%; 
+    }
+}
+
+@media (max-width:992px) {
+    
+    .AboutMeMain{
+        height: 650px;
+    }
+
+    .AboutMe{
+        grid-template-columns: 25% 65%; 
+    }
+
+    .ColumImage img{
+        height: 80%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .AboutMe{
+        gap: 10px; 
+    }
+    
+    .ColumImage img{
+        height: 70%;
+    }
+}
+
+@media (max-width:576px) {
+
+    .AboutMe{
+        grid-template-columns: 30% 60%; 
+        gap: 5px; 
+    }
+    
+    .ColumImage img{
+        height: 60%;
+    }
+}
+
+@media (max-width: 412px) {
+
+    .AboutMe{
+        grid-template-columns: 100%;
+        align-content: center;
+        padding: 50px 0 60px 0;
+    }
+
+    .ColumImage{
+        height: auto;
+        justify-content: center;
+        padding: 0;
+
+    }
+    
+    .ColumImage img{
+        height: 200px;
+        width: 200px;
+        border-radius: 100px;
+    }
+
+    .ColumAboutMe{
+        padding: 10px 15px;
+    }
+}

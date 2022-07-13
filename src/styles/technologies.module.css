@@ -1,0 +1,125 @@
+.TechnologiesMain{
+    height: auto;
+    margin: auto;
+    text-align: center;
+
+    /* background: linear-gradient(to bottom, #161616 0%, #3F3F3F 40%, #1C1C1C 150%), 
+                linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply; */
+
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #161515, #111111d5), url("../assets/Codigo.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #161515, #111111d5), url("../assets/Codigo.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    display: grid;
+    grid-template-rows: 70px 4px auto;
+    justify-content: center;
+    padding: 80px 0 80px 0;
+}
+
+.UnderlineTitle{
+    height: 4px;
+    width: 190px;
+    background-color: azure;
+    padding: 0;
+    margin: auto;
+}
+
+.GridGallery{
+    max-width: 1500px;
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+    margin: 0 20px;
+}
+
+.GridGallery > div {
+    height: 260px;
+    width: 300px;
+    margin: auto;
+}
+
+.GridGallery div > img{
+    height: 190px;
+    width: 80%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #1C1C1C;
+    margin-bottom: 5px;
+}
+
+/* .GridGallery img:hover{
+    box-shadow: 3px 3px 7px 2px rgba(207, 203, 203, 0.3);
+} */
+
+.GridGallery div > p{
+    color: azure;    
+}
+
+
+/*--------------------------------- Media Querys ----------------------------------------*/
+
+@media (max-width:1200px){
+    
+    .TechnologiesMain{
+        background-position: center;
+    }
+
+    .GridGallery {
+        margin: 0;
+    }
+
+    .GridGallery > div {
+        width: 280px;
+    }
+}
+
+@media (max-width:992px){
+    
+    .GridGallery {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width:768px){
+    
+    .GridGallery {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:576px){
+    
+    .GridGallery {
+        gap: 5px;
+    }
+
+    .GridGallery > div {
+        height: 280px;
+        width: 270px;
+    }
+}
+
+@media (max-width: 412px) {
+    
+    .GridGallery {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .GridGallery > div {
+        width: 300px;
+    }
+
+    .GridGallery div > img{
+        height: 200px;
+        width: 90%;
+    }
+}

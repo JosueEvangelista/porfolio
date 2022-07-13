@@ -1,0 +1,76 @@
+.GreetingMain{
+    height:700px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #161515, #111111cb), url("../assets/header.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #161515, #111111cb), url("../assets/header.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-attachment: fixed;
+    background-size: cover;   
+
+} 
+
+.Greeting{    
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+    gap: 10px;
+}
+
+/* .ColumPhoto{
+    background-image: url("../assets/Gato.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+.ColumGreeting{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content:center;
+}
+
+.ColumGreeting h1{
+    color: azure;
+    font-size: xx-large;
+}
+
+.ColumGreeting h2{
+    color: azure;
+    font-size: x-large;
+    font-weight: 300;
+}
+
+/*------------------------- Medias Querys ---------------------------------*/
+
+@media  (max-width:1200px) {
+    .GreetingMain{
+        height:650px;
+    }
+
+    .Greeting{    
+        grid-template-columns: 70% 30%;
+    }
+}
+
+@media  (max-width:992px) {
+
+    .Greeting{    
+        grid-template-columns: 80% 20%;
+    }
+}
+
+@media  (max-width:768px) {
+    
+    .GreetingMain{
+        background-position: center;
+    }
+
+    .Greeting{    
+        grid-template-columns: 100%;
+    }
+}

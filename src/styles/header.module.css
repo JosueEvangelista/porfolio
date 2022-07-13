@@ -1,0 +1,29 @@
+.HeaderPorfolio{
+    height:80px;  
+    width: 100vw;  
+    border-bottom: 1px solid rgba(240, 255, 255, 0.288); 
+    border-radius: 8px;    
+    background-color: hsla(0, 2%, 9%, 0.349);
+    
+    /*Para orientar el nav*/
+    display: flex;
+    justify-content: right;
+    padding-right: 20px;
+
+
+    /*Para dejar el nav en la parte superior*/
+    position: fixed; 
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+/*---------------------------- Medias Querys -------------------------------*/
+
+@media (max-width:768px){
+
+    .HeaderPorfolio{
+        justify-content: center;
+        padding: 0;
+    }
+}

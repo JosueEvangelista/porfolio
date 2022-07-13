@@ -1,0 +1,51 @@
+.FooterPorfolio{
+    height: 140px;
+    background-color: black;
+    color: azure;
+}
+
+.SocialFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding:20px 0;
+}
+
+.SocialFooter > a{
+    text-decoration: none;
+    color: azure;
+}
+
+.BoxIconFooter{
+    height: 55px;
+    width: 55px;
+    border: azure solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all linear 0.3s;
+}
+
+.BoxIconFooter:hover{
+    background-color: azure;
+    color: black;
+    border: none;
+    transition: all linear 0.5s;
+}
+
+.Icon{ 
+    height: 50%;
+    width: auto;
+    font-size: x-large;
+}
+
+.SignFooter{
+    display: flex;
+    gap: 5px; 
+    justify-content: center;
+}
+
+.SignFooter > span{
+    color:darkgray;
+}
