@@ -1,5 +1,5 @@
 import styles from "../styles/technologies.module.css";
-import image from "../assets/Gato.jpg";
+import image from "../assets/images/Gato.jpg";
 
 export function Technologies() {
   return (

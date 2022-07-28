@@ -16,6 +16,7 @@
     left: 0;
     top: 0;
     right: 0;
+    z-index: 9999;
 }
 
 /*---------------------------- Medias Querys -------------------------------*/
@@ -25,5 +26,13 @@
     .HeaderPorfolio{
         justify-content: center;
         padding: 0;
+    }
+}
+
+@media (max-width:550px){
+    .HeaderPorfolio{
+        height: auto;
+        border-bottom: none; 
+        background-color: transparent;        
     }
 }

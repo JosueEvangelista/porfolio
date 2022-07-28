@@ -3,11 +3,13 @@
     margin: auto;
     text-align: center;    
     color: azure;
+    position: relative;
+    z-index: 0;
 
     /*Fondo del contenedor*/
     background: #000000;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #161515, #11111196), url("../assets/Libros.jpg");  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #161515c7, #11111196), url("../assets/Libros.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #161515, #11111196), url("../assets/images/Libros.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #161515c7, #11111196), url("../assets/images/Libros.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-attachment: fixed;
     background-size: cover;  
@@ -47,25 +49,50 @@
     font-family: Verdana;
 }
 
+/*Posicionar los elementos*/
+.FormElement div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
 /*Para mantener un tamaño especifico del textarea*/
 .FormElement div > textarea{   
     min-width: 200px;
     min-height: 100px;
     max-width: 660px;
     max-height: 280px;
+    margin: 0;
 }
 
 .FormElement input:focus, textarea:focus{
     background-color: transparent;
     color: azure;
     border: none;
-  }
+}
+
+.ShowAlert{
+    width: 50%;
+    font-size: 15px;
+    font-family: Verdana;
+    background-color: #1615151e;
+    border-radius: 5px;
+    color: red;
+    text-align: left;
+    padding: 0 4px;
+}
+
+.HideAlert{
+    display: none;    
+}
 
 .FormBotton{
     margin: 6px auto;    
     font-size: large;
     padding: 8px 20px;       
-    border-radius: 5px;   
+    border-radius: 5px;
+    border-color: azure;   
     background-color: transparent;
     color: azure;
 }
@@ -92,6 +119,10 @@
 @media (max-width: 375px){    
 
     .FormElement div > input, textarea{ 
+        width: 45%;
+    }
+
+    .ShowAlert{
         width: 45%;
     }
 }

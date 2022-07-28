@@ -1,4 +1,4 @@
-import image from "../assets/Gato 2.jpg";
+import image from "../assets/images/Gato 2.jpg";
 import { Card } from "./CardsProjects";
 import styles from "../styles/projects.module.css";
 
@@ -11,24 +11,24 @@ export function Projects() {
         <div className={styles.CardsProjects}>
           <Card
             //Parametros
-            image={image} 
-            title="Titulo"
-            content="sjjdddndn jsdjsdjdsjd jsjsjdhdhdsjs hsjdhjdshdj"
-          />
+            image={image}
+            title="App móvil Carrera Informática Administrativa"
+            content="Una aplicación que sirve como medio para informar a los estudiantes con noticias relevantes, funciona como medio de comunicación para toda la carrera, se creo como proyecto en algunas clases de la carrera."
+          />          
           <Card
-            //Parametros
+            Parametros
             image={image}
             title="Titulo"
             content="sjjdddndn jsdjsdjdsjd jsjsjdhdhdsjs hsjdhjdshdj"
           />
           <Card
-            //Parametros
+            Parametros
             image={image}
             title="Titulo"
             content="sjjdddndn jsdjsdjdsjd jsjsjdhdhdsjs hsjdhjdshdj"
           />
           <Card
-            //Parametros
+            Parametros
             image={image}
             title="Titulo"
             content="sjjdddndn jsdjsdjdsjd jsjsjdhdhdsjs hsjdhjdshdj"

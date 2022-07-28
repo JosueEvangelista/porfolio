@@ -2,21 +2,25 @@
     display: flex;
     align-items: center;
     height: 100%;
+    margin-right: 20px;
 }
 
 .BtnNav{
-    height: 40px;
-    padding: 5px;
+    height: auto;
     margin-right: 20px;
-    background-color: azure;
-    border-radius: 6px;
-    font-size: large;    
+    background-color: transparent;
+    border: none;
     display: none;
 }
 
 .BtnNav:hover{
     cursor: pointer;
     opacity: 0.8;
+}
+
+.IconBtn{
+    color: azure;
+    font-size: xx-large;
 }
 
 .ListNav{
@@ -46,7 +50,30 @@
 /*-------------------------------- Medias Querys --------------------------------------*/
 
 @media (max-width:768px){
+    .NavHeader{
+        margin-right: 0;
+    }
     .ListNav{
         margin-right: 0;
+    }
+}
+
+@media (max-width:550px){
+
+    .NavHeader{
+        width: 100%;
+        justify-content: right;
+        margin-right: 0;
+        padding-top: 20px;
+    }
+
+    .ListNav{
+        flex-direction: column;
+        display: none;        
+        gap: 20px;
+    }
+
+    .BtnNav{
+        display: block;
     }
 }
